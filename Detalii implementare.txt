@@ -1,0 +1,18 @@
+programul contine doua clase(graf_neorientat, nod) si un struct(nod_vecin):
+
+clasa graf_neorientat : - clasa ceruta ce corespunde unui graf neorientat, are ca atribute
+					o valoare n ce indica numarul de noduri si un array alocat dinamic
+					de noduri( obiecte de tip nod)
+	
+clasa nod : - clasa care defineste un nod al unui graf, contine o valoare de tip int ( in cazul declararii
+			vectorului de noduri in clasa graf_neorientat, valoarea nodurilor corespunde pizitiei din vector si reciproc)
+			- fiecare obiect de tip nod va contine ca atribute, pe langa valoare,  doi pointeri de tip nod_vecin, pentru a crea
+			o lista simplu inlantuita de valori ce reprezinta valorile vecinilor acelui obiect de tip nod
+			
+structura nod_vecin: -reprezinta elementele listei de vecini simplu inlantuita a fiecarui obiect de tip nod
+					- au ca atribute o valoare ( valoarea corespunzatoare nodului vecin coincide cu valoarea obiectului
+					de tip nod corespunzator, din vectorul de noduri al obiectului graf_neorientat)
+					
+pe scurt, obiectul graf_neorientat are un numar de noduri si un array de noduri(obiecte din clasa nod), iar fiecare nod are o valoare si o lista simplu 
+inlantuita de noduri vecine(elemente din struct-ul nod_vecin); 
+				
